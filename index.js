@@ -53,6 +53,23 @@ app.get("/api", async (req, res) => {
   }
 });
 
+const mediaFolder = path.join(__dirname, "media");
+
+// API to serve individual media files
+app.get("/media/:filename", (req, res) => {
+  const { filename } = req.params;
+  const filePath = path.join(mediaFolder, filename);
+
+  fs.access(filePath, fs.constants.F_OK, err => {
+    if (err) {
+      console.error("File not found:", filePath);
+      return res.status(404).send("File not found");
+    }
+
+    res.sendFile(filePath); // Serve the file
+  });
+});
+
 // Serverless handler export
 module.exports.handler = serverless(app);
 
