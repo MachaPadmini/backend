@@ -1,13 +1,17 @@
 <!DOCTYPE html>
-<style>
-  body{
+<html lang="en">
+  <style>
+    body{
     background-color: #dfd8e0;
 }
 
 .grid-container{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-areas: "nav nav nav nav nav nav nav nav nav nav nav nav"
+    grid-template-rows: 0.1fr 0.1fr 0.8fr 0.6fr 1fr 0.1fr 0.5fr 0.1fr 0.5fr 0.1fr 0.5fr 0.7fr 0.1fr;
+    grid-template-areas: 
+    "Myhead Myhead Myhead Myhead Myhead Myhead Myhead Myhead Myhead Myhead Myhead Myhead"
+    "nav nav nav nav nav nav nav nav nav nav nav nav"
     "about about about about about about myimg myimg myimg myimg myimg myimg"
     "car car car car car car car car car car car car"
     "work work work work work work work work work work work work"
@@ -20,7 +24,10 @@
     "blogs blogs blogs blogs blogs blogs blogs blogs blogs blogs blogs blogs"
     "footer footer footer footer footer footer footer footer footer footer footer footer";
 }
-
+.Myhead{
+    grid-area: Myhead;
+    text-align: center;
+}
 nav {
     margin-left: auto;
     margin-right: auto;
@@ -205,17 +212,26 @@ nav {
     background-color: rgb(199, 200, 200);
     padding: 10px;
     margin-top: 2px;
+    text-align: center;
     img{
-        width: 90px;
-        float: inline-start;
-        margin-right: 10px;
+        width: 150px;
+        height: 100px;
+        margin-left: auto;
+        margin-right: auto;
     }
     a{
-        float: inline-start;
         width: 90%;
-        margin-bottom: 20px;
+    }
+    h3{
+        text-align: justify;
+        margin: none;
     }
 }
+.blog{
+    width: 480px;
+    float: inline-start;
+}
+
 
 footer{
     margin-left: auto;
@@ -243,7 +259,10 @@ footer{
     }
     .grid-container{
         grid-template-columns: 1fr;
-        grid-template-areas: "nav"
+        grid-template-rows: 0.01fr 0.01fr 0.3fr 0.2fr 0.5fr 1fr 0.01fr 0.4fr 0.4fr 0.01fr 0.4fr 0.01fr 0.35fr 0.01fr 0.3fr 0.3fr 0.3fr 0.7fr 0.01fr;
+        grid-template-areas: 
+        "Myhead"
+        "nav"
         "myimg"
         "about"
         "car"
@@ -278,16 +297,15 @@ footer{
         }
     }
 }
-</style>
-<html lang="en">
+  </style>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
     <title>Document</title>
 </head>
 <body>
     <div class="grid-container">
+      <header class="Myhead"><h3>MY PORTFOLIO</h3></header>
         <nav>
             <span>
                 <img
@@ -320,17 +338,17 @@ footer{
                 <a href="https://www.linkedin.com/in/macha-padmini">CONTACT</a>
               </span>
         </nav>
-        <div class="about" id="about">
+        <section class="about" id="about">
             <h1>Macha Padmini</h1>
             <h3>Software Engineer</h3>
-        </div>
-        <div class="myimg">
+        </section>
+        <section class="myimg">
             <img
-            src="https://media.licdn.com/dms/image/v2/D4E03AQG9R368vLB5nQ/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1713815060557?e=1738195200&v=beta&t=QHM7S732R8vy4s-8k_mGwVOqtWjEe1LsJ7SWgA5cl-I"
+            src="https://media.licdn.com/dms/image/v2/D4E03AQG9R368vLB5nQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1713815060557?e=1738800000&v=beta&t=6PS_VJMftsk66Fv70rZXvStuYPh8VBR3Rtk0mq06fOA"
           />
-        </div>
-        <div class="career">
-            <h3>Career Objective</h3>
+        </section>
+        <section class="career">
+            <h3>Professional Summary</h3>
             <img
             src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdSM8BL6FQKgH2HcZBYNklzWr_5sQpUHWpgg&s"
           />
@@ -344,8 +362,8 @@ footer{
             develop impactful solutions that drive efficiency, security, and
             user-centered design."
           </a>
-        </div>
-        <div class="work" id="experience">
+        </section>
+        <section class="work" id="experience">
             <h3>Work Experience</h3>
             <img
             src="https://imageio.forbes.com/specials-images/imageserve/62387a12679c4bb4f691f59f/0x0.jpg?format=jpg&crop=661,662,x235,y147,safe&width=300"
@@ -375,9 +393,9 @@ footer{
             on their potential impact. - Optimized strategies to meet both
             short-term and long-term investment objectives.
           </a>
-        </div>
+        </section>
         <h3 id="prjhead">Projects</h3>
-        <div class="project" id="prj1">
+        <section class="project" id="prj1">
             <img
               src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbemDMtSO0MJZ3SwS4M1byERFZ_v2o1iBt9Q&s"
             />
@@ -388,8 +406,8 @@ footer{
               emphasizing object-oriented programming (OOP) for effective
               management of game components.
             </a>
-        </div>
-        <div class="project" id="prj2">
+        </section>
+        <section class="project" id="prj2">
             <img
               src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1pp8IBA1PIi06aa8trB3hljE1sxAnElltig&s"
             />
@@ -400,10 +418,10 @@ footer{
               successfully dodging obstacles, collecting power-ups, and
               completing levels.
             </a>
-        </div>
+        </section>
         <h3 id="eduhead">Education</h3>
         <h3 id="cerhead">Certification</h3>
-        <div class="edu">
+        <section class="edu">
             <img
               src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvCu9MV8mmVDwzKJo_KnzrAWWPSQ5YlpwX7A&s"
             />
@@ -416,8 +434,8 @@ footer{
                 Data.</a
               >
             </a>
-        </div>
-        <div class="cer">
+        </section>
+        <section class="cer">
             <img
             src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPVNpIXHwcAkO22ZUxsOp8dMLky5jHgTij9A&s"
           />
@@ -427,9 +445,9 @@ footer{
             Python Programming: Skilled in data analysis, web development, and
             automation with libraries like Pandas and Flask.
           </a>
-        </div>
+        </section>
         <h3 id="skillhead">Skills</h3>
-        <div class="skill" id="skill1">
+        <section class="skill" id="skill1">
             <img
               src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfHAL9lwC3v52oaow4glc74V_u068ns3h2tg&s"
             />
@@ -440,8 +458,8 @@ footer{
               Familiar with relational database management systems such as MySQL
               and PostgreSQL.
             </a>
-        </div>
-        <div class="skill" id="skill2">
+        </section>
+        <section class="skill" id="skill2">
             <img
               src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjFxLTtL-3bwkqRcHTbWfXYGG8yPHIDn_9vg&s"
             />
@@ -452,8 +470,8 @@ footer{
               understanding of object-oriented programming and data
               visualization techniques.
             </a>
-        </div>
-        <div class="skill" id="skill3">
+        </section>
+        <section class="skill" id="skill3">
             <img
             src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXEgMyIuR04vWWQSj8ugCSPzEVEvzn6D89zQ&s"
           />
@@ -464,34 +482,31 @@ footer{
             applications. Strong understanding of software development
             principles and best practices.
           </a>
-        </div>
-        <div class="blogs">
+        </section>
+        <section class="blogs">
             <h3>Blogs</h3>
-            <img
+            <div class="blog">
+              <img
             src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPDfW9EOYFyamNyurzKbNb3f69Uym7Cdmang&s"
-          />
+          /><br/>
           <a>
-            Blog Author: "5 Common Mistakes in Coding and How to Avoid Them" -
-            Authored a detailed blog post addressing common coding errors and
-            best practices for improving code quality. - Focused on topics such
-            as commenting, error handling, version control, and clean code
-            structure. - Provided practical examples and solutions to help
-            developers avoid pitfalls and write more efficient, maintainable
-            code.
-          </a>
-          <img
-            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoqr1XJeP6fDrB2UJMRB1gACq5IILoMvwbcw&s"
-          />
+           "5 Common Mistakes in Coding and How to Avoid Them"
+          </a></div>        
+          <div class="blog">
+            <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTH1OOWhV-kXmChYKRPmG46hilvSswp574prg&s"
+          /><br/>
           <a>
-            Blog Author: "How Cloud Computing is Revolutionizing Software
-            Development" - Wrote an insightful blog post on the transformative
-            impact of cloud computing on software development. - Discussed key
-            technologies like AWS, Azure, and Google Cloud, and how they enhance
-            scalability, collaboration, and deployment efficiency. - Explored
-            cloud-based development tools, CI/CD pipelines, and the role of
-            serverless architecture in modern software solutions.</a
-          >
-        </div>
+           "Version Control Best Practices: A Guide to Git and GitHub"
+          </a></div>        
+          <div class="blog">
+            <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4Vp4lNVB8p9mHOdNk4iFYlHcjiJtbx1QzOg&s"
+          /><br/>
+          <a>
+            "Building Effective Unit Tests: A Key to Bug-Free Code"
+          </a></div>            
+        </section>
         <footer>
             <span
           ><img
