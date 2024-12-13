@@ -1,245 +1,244 @@
 <!DOCTYPE html>
 <html lang="en">
   <style>
-    body{
-    background-color: #dfd8e0;
-}
+    body {
+      background-color: #dfd8e0;
+    }
 
-.grid-container{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 0.1fr 0.1fr 0.8fr 0.6fr 1fr 0.1fr 0.5fr 0.1fr 0.5fr 0.1fr 0.5fr 0.7fr 0.1fr;
-    grid-template-areas: 
-    "Myhead Myhead Myhead Myhead Myhead Myhead Myhead Myhead Myhead Myhead Myhead Myhead"
-    "nav nav nav nav nav nav nav nav nav nav nav nav"
-    "about about about about about about myimg myimg myimg myimg myimg myimg"
-    "car car car car car car car car car car car car"
-    "work work work work work work work work work work work work"
-    "prjhead prjhead prjhead prjhead prjhead prjhead prjhead prjhead prjhead prjhead prjhead prjhead"
-    "prj1 prj1 prj1 prj1 prj1 prj1 prj2 prj2 prj2 prj2 prj2 prj2"
-    "eduhead eduhead eduhead eduhead eduhead eduhead cerhead cerhead cerhead cerhead cerhead cerhead"
-    "edu edu edu edu edu edu cer cer cer cer cer cer"
-    "skillhead skillhead skillhead skillhead skillhead skillhead skillhead skillhead skillhead skillhead skillhead skillhead"
-    "skill1 skill1 skill1 skill1 skill2 skill2 skill2 skill2 skill3 skill3 skill3 skill3 "
-    "blogs blogs blogs blogs blogs blogs blogs blogs blogs blogs blogs blogs"
-    "footer footer footer footer footer footer footer footer footer footer footer footer";
-}
-.Myhead{
-    grid-area: Myhead;
-    text-align: center;
-}
-nav {
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 20px;
-    grid-area: nav;
-    margin-left: auto;
-    margin-right: auto;
-    span {
-      margin-left: 50px;
-      background-color: rgb(164, 183, 220);
-      border-radius: 3px;
-      padding: 2px;
-      float: inline-start;
-      img {
-        width: 15px;
+    .grid-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+      grid-template-rows: 0.1fr 0.1fr 1.0fr 1.0fr 1.4fr 0.3fr 0.9fr 0.4fr 0.8fr 0.3fr 0.8fr 1.0fr 0.2fr;
+      grid-template-areas:
+        "Myhead Myhead Myhead Myhead Myhead Myhead Myhead Myhead Myhead Myhead Myhead Myhead"
+        "nav nav nav nav nav nav nav nav nav nav nav nav"
+        "about about about about about about myimg myimg myimg myimg myimg myimg"
+        "car car car car car car car car car car car car"
+        "work work work work work work work work work work work work"
+        "prjhead prjhead prjhead prjhead prjhead prjhead prjhead prjhead prjhead prjhead prjhead prjhead"
+        "prj1 prj1 prj1 prj1 prj1 prj1 prj2 prj2 prj2 prj2 prj2 prj2"
+        "eduhead eduhead eduhead eduhead eduhead eduhead cerhead cerhead cerhead cerhead cerhead cerhead"
+        "edu edu edu edu edu edu cer cer cer cer cer cer"
+        "skillhead skillhead skillhead skillhead skillhead skillhead skillhead skillhead skillhead skillhead skillhead skillhead"
+        "skill1 skill1 skill1 skill1 skill2 skill2 skill2 skill2 skill3 skill3 skill3 skill3 "
+        "blogs blogs blogs blogs blogs blogs blogs blogs blogs blogs blogs blogs"
+        "footer footer footer footer footer footer footer footer footer footer footer footer";
+    }
+    .Myhead {
+      grid-area: Myhead;
+      text-align: center;
+    }
+    nav {
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 20px;
+      grid-area: nav;
+      margin-left: auto;
+      margin-right: auto;
+      span {
+        margin-left: 50px;
+        background-color: rgb(164, 183, 220);
+        border-radius: 3px;
+        padding: 2px;
+        float: inline-start;
+        img {
+          width: 15px;
+        }
       }
     }
-  }
 
-.about{
-    grid-area: about;
-    background: linear-gradient(to right, #d5c1d8, #e3abdd);
-    padding: 10px;
-    font-size: 25px;
-}
-.myimg{
-    grid-area: myimg;
-    text-align: center;
-    background: linear-gradient(to right, #e3abdd, rgb(164, 183, 220));
-    padding: 10px;
-    img{
-        width: 200px;
+    .about {
+      grid-area: about;
+      background: linear-gradient(to right, #d5c1d8, #e3abdd);
+      padding: 10px;
+      font-size: 25px;
     }
-}
+    .myimg {
+      grid-area: myimg;
+      text-align: center;
+      background: linear-gradient(to right, #e3abdd,#d5c1d8 );
+      padding: 10px;
+      img {
+        width: 200px;
+      }
+    }
 
-.career{
-    grid-area: car;
-    background-color: rgb(186, 166, 204);
-    padding: 10px;
-    margin-top: 2px;
-    img{
+    .career {
+      grid-area: car;
+      background-color: rgb(196, 185, 205);
+      padding: 10px;
+      margin-top: 2px;
+      img {
         width: 100px;
         float: inline-start;
         margin-right: 10px;
-    }
-    a{
+      }
+      a {
         float: inline-start;
         width: 90%;
         margin-top: 20px;
+      }
     }
-}
 
-.work{
-    grid-area: work;
-    text-align: justify;
-    background-color: rgb(210, 222, 222);
-    padding: 10px;
-    margin-top: 2px;
-    img{
+    .work {
+      grid-area: work;
+      text-align: justify;
+      background-color: rgb(210, 222, 222);
+      padding: 10px;
+      margin-top: 2px;
+      img {
         width: 90px;
         float: inline-start;
         margin-right: 10px;
-    }
-    a{
+      }
+      a {
         float: inline-start;
         text-align: justify;
         width: 90%;
         margin-bottom: 20px;
         margin-top: 10px;
+      }
     }
-}
-#prjhead{
-    grid-area: prjhead;
-    background-color: rgb(214, 204, 193);
-    margin: 0px;
-    padding: 10px;
-    margin-top: 2px;
-}
+    #prjhead {
+      grid-area: prjhead;
+      background-color: rgb(214, 204, 193);
+      margin: 0px;
+      padding: 10px;
+      margin-top: 2px;
+    }
 
-.project{
-    background-color: rgb(214, 204, 193);
-    padding: 10px;
-    img{
+    .project {
+      background-color: rgb(214, 204, 193);
+      padding: 10px;
+      img {
         width: 100px;
         float: inline-start;
         margin-right: 10px;
         height: 100px;
-    }
-    a{
+      }
+      a {
         float: inline-start;
         width: 80%;
         margin-top: 10px;
+      }
     }
-}
 
-#prj1{
-    grid-area: prj1;
-}
-#prj2{
-    grid-area: prj2;
-}
+    #prj1 {
+      grid-area: prj1;
+    }
+    #prj2 {
+      grid-area: prj2;
+    }
 
-#eduhead{
-    grid-area: eduhead;
-    background-color: rgb(232, 244, 217);
-    margin: 0px;
-    padding: 10px;
-    margin-top: 2px;
-}
-#cerhead{
-    grid-area: cerhead;
-    background-color: rgb(226, 232, 191); 
-    margin: 0px;
-    padding: 10px;
-    margin-top: 2px;
-}
-.edu{
-    grid-area:edu ;
-    background-color: rgb(232, 244, 217); 
-    padding: 10px;
-    img{
+    #eduhead {
+      grid-area: eduhead;
+      background-color: rgb(232, 244, 217);
+      margin: 0px;
+      padding: 10px;
+      margin-top: 2px;
+    }
+    #cerhead {
+      grid-area: cerhead;
+      background-color: rgb(226, 232, 191);
+      margin: 0px;
+      padding: 10px;
+      margin-top: 2px;
+    }
+    .edu {
+      grid-area: edu;
+      background-color: rgb(232, 244, 217);
+      padding: 10px;
+      img {
         width: 100px;
         float: inline-start;
         margin-right: 10px;
-    }
-    a{
+      }
+      a {
         float: inline-start;
         width: 80%;
+      }
     }
-}
-.cer{
-    grid-area:cer ;
-    background-color: rgb(226, 232, 191); 
-    padding: 10px;
-    img{
+    .cer {
+      grid-area: cer;
+      background-color: rgb(226, 232, 191);
+      padding: 10px;
+      img {
         width: 100px;
         float: inline-start;
         margin-right: 10px;
-    }
-    a{
+      }
+      a {
         float: inline-start;
         width: 80%;
         margin-top: 10px;
+      }
     }
-}
 
-#skillhead{
-    grid-area: skillhead;
-    background-color: rgb(250, 215, 215);
-    margin: 0px;
-    padding: 10px;
-    margin-top: 2px;
-}
+    #skillhead {
+      grid-area: skillhead;
+      background-color: rgb(250, 215, 215);
+      margin: 0px;
+      padding: 10px;
+      margin-top: 2px;
+    }
 
-.skill{
-    background-color: rgb(250, 215, 215);
-    padding: 10px;
-    img{
+    .skill {
+      background-color: rgb(250, 215, 215);
+      padding: 10px;
+      img {
         width: 90px;
         height: 90px;
         float: inline-start;
         margin-right: 5px;
-    }
-    a{
+      }
+      a {
         width: 80%;
         float: inline-start;
+      }
     }
-}
 
-#skill1{
-    grid-area: skill1;
-}
-#skill2{
-    grid-area: skill2;
-}
-#skill3{
-    grid-area: skill3;
-}
+    #skill1 {
+      grid-area: skill1;
+    }
+    #skill2 {
+      grid-area: skill2;
+    }
+    #skill3 {
+      grid-area: skill3;
+    }
 
-.blogs{
-    grid-area: blogs;
-    background-color: rgb(199, 200, 200);
-    padding: 10px;
-    margin-top: 2px;
-    text-align: center;
-    img{
+    .blogs {
+      grid-area: blogs;
+      background-color: rgb(199, 200, 200);
+      padding: 10px;
+      margin-top: 2px;
+      text-align: center;
+      img {
         width: 150px;
         height: 100px;
         margin-left: auto;
         margin-right: auto;
-    }
-    a{
+      }
+      a {
         width: 90%;
-    }
-    h3{
+      }
+      h3 {
         text-align: justify;
         margin: none;
+      }
     }
-}
-.blog{
-    width: 480px;
-    float: inline-start;
-}
+    .blog {
+      width: 480px;
+      float: inline-start;
+    }
 
-
-footer{
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    grid-area: footer;
-    span {
+    footer {
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      grid-area: footer;
+      span {
         margin-left: 50px;
         background-color: rgb(180, 172, 244);
         border-radius: 3px;
@@ -248,267 +247,307 @@ footer{
           width: 15px;
         }
       }
-}
-
-
-@media only screen and (max-width: 600px){
-    body{
-        img{
-            margin-left: 40%;
-        }
     }
-    .grid-container{
+
+    /* Hamburger menu styles for mobile view */
+    @media only screen and (max-width: 600px) {
+      body {
+        img {
+          margin-left: 40%;
+        }
+      }
+
+      .grid-container {
         grid-template-columns: 1fr;
         grid-template-rows: 0.01fr 0.01fr 0.3fr 0.2fr 0.5fr 1fr 0.01fr 0.4fr 0.4fr 0.01fr 0.4fr 0.01fr 0.35fr 0.01fr 0.3fr 0.3fr 0.3fr 0.7fr 0.01fr;
-        grid-template-areas: 
-        "Myhead"
-        "nav"
-        "myimg"
-        "about"
-        "car"
-        "work"
-        "prjhead"
-        "prj1"
-        "prj2"
-        "eduhead"
-        "edu"
-        "cerhead"
-        "cer"
-        "skillhead"
-        "skill1"
-        "skill2"
-        "skill3"
-        "blogs"
-        "footer";
-    }
-    nav{
-        img{
-            margin-left: 0px;
+        grid-template-areas:
+          "Myhead"
+          "nav"
+          "myimg"
+          "about"
+          "car"
+          "work"
+          "prjhead"
+          "prj1"
+          "prj2"
+          "eduhead"
+          "edu"
+          "cerhead"
+          "cer"
+          "skillhead"
+          "skill1"
+          "skill2"
+          "skill3"
+          "blogs"
+          "footer";
+      }
+
+      nav {
+        grid-template-rows: 1fr;
+        display: inline-block;
+        width: 100%;
+        text-align: center;
+        img {
+          margin-left: 0px;
         }
+      }
+
+      /* Hide menu links initially on mobile */
+      nav span * {
+        display: none;
+      }
+
+      /* Hamburger menu icon */
+      .iconn {
+        font-size: 10px;
+        color: rgb(12, 12, 12);
+        cursor: pointer;
+      }
+
+      /* When menu is active (responsive class added) */
+      .responsive span * {
+        display: inline-block;
+      }
     }
-    .myimg{
-        img{
-            margin-left: 0px;
-        }
+
+    /* Optional span styling for additional elements */
+    span {
+      margin-left: 50px;
+      background-color: rgb(164, 183, 220);
+      border-radius: 3px;
+      padding: 2px;
+      float: inline-start;
     }
-    footer{
-        img{
-            margin-left: 0px;
-        }
+
+    span img {
+      width: 15px;
     }
-}
+    .myimg {
+      img {
+        margin-left: 0px;
+      }
+    }
+    footer {
+      img {
+        margin-left: 0px;
+      }
+    }
   </style>
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="grid-container">
       <header class="Myhead"><h3>MY PORTFOLIO</h3></header>
-        <nav>
-            <span>
-                <img
-                  src="https://cdn-icons-png.freepik.com/256/11917/11917274.png?ga=GA1.1.1494018110.1727279174&semt=ais_hybrid"
-                />
-                <a href="#about">ABOUT</a>
-              </span>
-              <span>
-                <img
-                  src="https://cdn-icons-png.freepik.com/256/7861/7861929.png?ga=GA1.1.1494018110.1727279174&semt=ais_hybrid"
-                />
-                <a href="#experience"> EXPERIENCE</a>
-              </span>
-              <span>
-                <img
-                  src="https://cdn-icons-png.freepik.com/256/17650/17650617.png?ga=GA1.1.1494018110.1727279174&semt=ais_hybrid"
-                />
-                <a href="#prjhead">PROJECTS</a>
-              </span>
-              <span>
-                <img
-                  src="https://cdn-icons-png.freepik.com/256/3145/3145740.png?ga=GA1.1.1494018110.1727279174&semt=ais_hybrid"
-                />
-                <a href="#eduhead">EDUCATION</a>
-              </span>
-              <span>
-                <img
-                  src="https://cdn-icons-png.freepik.com/256/3298/3298124.png?ga=GA1.1.1494018110.1727279174&semt=ais_hybrid"
-                />
-                <a href="https://www.linkedin.com/in/macha-padmini">CONTACT</a>
-              </span>
-        </nav>
-        <section class="about" id="about">
-            <h1>Macha Padmini</h1>
-            <h3>Software Engineer</h3>
-        </section>
-        <section class="myimg">
-            <img
-            src="https://media.licdn.com/dms/image/v2/D4E03AQG9R368vLB5nQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1713815060557?e=1738800000&v=beta&t=6PS_VJMftsk66Fv70rZXvStuYPh8VBR3Rtk0mq06fOA"
-          />
-        </section>
-        <section class="career">
-            <h3>Professional Summary</h3>
-            <img
-            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdSM8BL6FQKgH2HcZBYNklzWr_5sQpUHWpgg&s"
-          />
-          <a>
-            "As a passionate and dedicated computer science student, I aim to
-            leverage my strong foundation in programming, problem-solving, and
-            software development to contribute to innovative projects in a
-            dynamic, growth-oriented environment. With hands-on experience in
-            various technologies and a keen interest in cybersecurity and
-            artificial intelligence, I am committed to applying my skills to
-            develop impactful solutions that drive efficiency, security, and
-            user-centered design."
-          </a>
-        </section>
-        <section class="work" id="experience">
-            <h3>Work Experience</h3>
-            <img
-            src="https://imageio.forbes.com/specials-images/imageserve/62387a12679c4bb4f691f59f/0x0.jpg?format=jpg&crop=661,662,x235,y147,safe&width=300"
-          />
-          <a
-            >Cognizant Technology Solutions, Hyderabad. Process Executive - Data
-            Accomplishments: - Analyzed data anomalies in Cash Equities and
-            Fixed Income Products, and generated profit and loss (P&L) reports.
-            - Monitored data pipelines to ensure accurate ingestion for daily
-            reconciliation tasks. - Executed daily reconciliations for UK and US
-            datasets, ensuring data consistency and synchronization. - Managed
-            end-to-end processes to comply with SLAs, minimize errors, and
-            reduce client escalations. - Utilized automation tools for P&L
-            reconciliation and collaborated with teams to resolve data issues
-            and support system migrations.
-          </a>
+      <nav id="ResponsiveMenu">
+        <span class="iconn">
           <img
-            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ02abqnMT5CBuUlL2TJvWX15viDS-yprq_-MNATtjP6qp0mWyZAzzAhElMMfVmTx-e2bM&usqp=CAU"
+            src="https://cdn-icons-png.freepik.com/256/11917/11917274.png?ga=GA1.1.1494018110.1727279174&semt=ais_hybrid"
           />
-          <a
-            >INTERNSHIP - JMARATHON ADVISORY SERVICES PVT LTD “Basics of Indian
-            Stock Market and International Currency Market.” Accomplishments: -
-            Analyzed the dynamics of rapidly evolving and volatile financial
-            markets. - Developed an understanding of primary and secondary
-            market structures and their operational mechanisms. - Assessed the
-            risk factors associated with various investment strategies, focusing
-            on their potential impact. - Optimized strategies to meet both
-            short-term and long-term investment objectives.
-          </a>
-        </section>
-        <h3 id="prjhead">Projects</h3>
-        <section class="project" id="prj1">
-            <img
-              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbemDMtSO0MJZ3SwS4M1byERFZ_v2o1iBt9Q&s"
-            />
-            <a
-              >INTERACTIVE TETRIS GAME - Fundamentals of Game Development: The
-              project of developing Tetris with Python and Pygame provides a
-              practical introduction to essential game development concepts,
-              emphasizing object-oriented programming (OOP) for effective
-              management of game components.
-            </a>
-        </section>
-        <section class="project" id="prj2">
-            <img
-              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1pp8IBA1PIi06aa8trB3hljE1sxAnElltig&s"
-            />
-            <a>IMPLEMENTING REINFORCEMENT LEARNING IN GAMING - Mario Agent
-              Development: Developed and trained the "Mario Agent," a
-              reinforcement learning agent, using OpenAI Gym and the nes-py
-              emulator. The agent autonomously navigates the Mario game,
-              successfully dodging obstacles, collecting power-ups, and
-              completing levels.
-            </a>
-        </section>
-        <h3 id="eduhead">Education</h3>
-        <h3 id="cerhead">Certification</h3>
-        <section class="edu">
-            <img
-              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvCu9MV8mmVDwzKJo_KnzrAWWPSQ5YlpwX7A&s"
-            />
-            <a
-              >UNIVERSITY OF NEW HAVEN, New Haven, CT Aug 2023 - May 2025
-              <a>Masters in Computer Science - GPA: 3.8/4.0</a>
-              <a
-                >Relevant Courses: Artificial Intelligence, Algorithm Design and
-                Analysis, Web-Database Appl Development, Cloud Computing & Big
-                Data.</a
-              >
-            </a>
-        </section>
-        <section class="cer">
-            <img
-            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPVNpIXHwcAkO22ZUxsOp8dMLky5jHgTij9A&s"
+          <a href="#about">ABOUT</a>
+        </span>
+        <span class="iconn">
+          <img
+            src="https://cdn-icons-png.freepik.com/256/7861/7861929.png?ga=GA1.1.1494018110.1727279174&semt=ais_hybrid"
           />
-          <a
-            >Java Programming: Proficient in object-oriented programming, data
-            structures, and application development using Java frameworks. -
-            Python Programming: Skilled in data analysis, web development, and
-            automation with libraries like Pandas and Flask.
-          </a>
-        </section>
-        <h3 id="skillhead">Skills</h3>
-        <section class="skill" id="skill1">
-            <img
-              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfHAL9lwC3v52oaow4glc74V_u068ns3h2tg&s"
-            />
-            <a
-              >SQL (Structured Query Language): Proficient in writing complex
-              queries for data retrieval, manipulation, and analysis.
-              Experienced in database design, normalization, and optimization.
-              Familiar with relational database management systems such as MySQL
-              and PostgreSQL.
-            </a>
-        </section>
-        <section class="skill" id="skill2">
-            <img
-              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjFxLTtL-3bwkqRcHTbWfXYGG8yPHIDn_9vg&s"
-            />
-            <a
-              >Python: Proficient in Python programming for data analysis,
-              automation, and web development. Experienced with frameworks and
-              libraries such as Pandas, NumPy, Flask, and Django. Strong
-              understanding of object-oriented programming and data
-              visualization techniques.
-            </a>
-        </section>
-        <section class="skill" id="skill3">
-            <img
-            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXEgMyIuR04vWWQSj8ugCSPzEVEvzn6D89zQ&s"
+          <a href="#experience"> EXPERIENCE</a>
+        </span>
+        <span class="iconn">
+          <img
+            src="https://cdn-icons-png.freepik.com/256/17650/17650617.png?ga=GA1.1.1494018110.1727279174&semt=ais_hybrid"
           />
+          <a href="#prjhead">PROJECTS</a>
+        </span>
+        <span class="iconn">
+          <img
+            src="https://cdn-icons-png.freepik.com/256/3145/3145740.png?ga=GA1.1.1494018110.1727279174&semt=ais_hybrid"
+          />
+          <a href="#eduhead">EDUCATION</a>
+        </span>
+        <span class="iconn">
+          <img
+            src="https://cdn-icons-png.freepik.com/256/3298/3298124.png?ga=GA1.1.1494018110.1727279174&semt=ais_hybrid"
+          />
+          <a href="https://www.linkedin.com/in/macha-padmini">CONTACT</a>
+        </span>
+        <a href="javascript:void(0);" class="iconn" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+           </a
+        >
+      </nav>
+      <section class="about" id="about">
+        <h1>Macha Padmini</h1>
+        <h3>Software Engineer</h3>
+      </section>
+      <section class="myimg">
+        <img
+          src="https://media.licdn.com/dms/image/v2/D4E03AQG9R368vLB5nQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1713815060557?e=1738800000&v=beta&t=6PS_VJMftsk66Fv70rZXvStuYPh8VBR3Rtk0mq06fOA"
+        />
+      </section>
+      <section class="career">
+        <h3>Professional Summary</h3>
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdSM8BL6FQKgH2HcZBYNklzWr_5sQpUHWpgg&s"
+        />
+        <a>
+          "As a passionate and dedicated computer science student, I aim to
+          leverage my strong foundation in programming, problem-solving, and
+          software development to contribute to innovative projects in a
+          dynamic, growth-oriented environment. With hands-on experience in
+          various technologies and a keen interest in cybersecurity and
+          artificial intelligence, I am committed to applying my skills to
+          develop impactful solutions that drive efficiency, security, and
+          user-centered design."
+        </a>
+      </section>
+      <section class="work" id="experience">
+        <h3>Work Experience</h3>
+        <img
+          src="https://imageio.forbes.com/specials-images/imageserve/62387a12679c4bb4f691f59f/0x0.jpg?format=jpg&crop=661,662,x235,y147,safe&width=300"
+        />
+        <a
+          >Cognizant Technology Solutions, Hyderabad. Process Executive - Data
+          Accomplishments: - Analyzed data anomalies in Cash Equities and Fixed
+          Income Products, and generated profit and loss (P&L) reports. -
+          Monitored data pipelines to ensure accurate ingestion for daily
+          reconciliation tasks. - Executed daily reconciliations for UK and US
+          datasets, ensuring data consistency and synchronization. - Managed
+          end-to-end processes to comply with SLAs, minimize errors, and reduce
+          client escalations. - Utilized automation tools for P&L reconciliation
+          and collaborated with teams to resolve data issues and support system
+          migrations.
+        </a>
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ02abqnMT5CBuUlL2TJvWX15viDS-yprq_-MNATtjP6qp0mWyZAzzAhElMMfVmTx-e2bM&usqp=CAU"
+        />
+        <a
+          >INTERNSHIP - JMARATHON ADVISORY SERVICES PVT LTD “Basics of Indian
+          Stock Market and International Currency Market.” Accomplishments: -
+          Analyzed the dynamics of rapidly evolving and volatile financial
+          markets. - Developed an understanding of primary and secondary market
+          structures and their operational mechanisms. - Assessed the risk
+          factors associated with various investment strategies, focusing on
+          their potential impact. - Optimized strategies to meet both short-term
+          and long-term investment objectives.
+        </a>
+      </section>
+      <h3 id="prjhead">Projects</h3>
+      <section class="project" id="prj1">
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbemDMtSO0MJZ3SwS4M1byERFZ_v2o1iBt9Q&s"
+        />
+        <a
+          >INTERACTIVE TETRIS GAME - Fundamentals of Game Development: The
+          project of developing Tetris with Python and Pygame provides a
+          practical introduction to essential game development concepts,
+          emphasizing object-oriented programming (OOP) for effective management
+          of game components.
+        </a>
+      </section>
+      <section class="project" id="prj2">
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1pp8IBA1PIi06aa8trB3hljE1sxAnElltig&s"
+        />
+        <a
+          >IMPLEMENTING REINFORCEMENT LEARNING IN GAMING - Mario Agent
+          Development: Developed and trained the "Mario Agent," a reinforcement
+          learning agent, using OpenAI Gym and the nes-py emulator. The agent
+          autonomously navigates the Mario game, successfully dodging obstacles,
+          collecting power-ups, and completing levels.
+        </a>
+      </section>
+      <h3 id="eduhead">Education</h3>
+      <h3 id="cerhead">Certification</h3>
+      <section class="edu">
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvCu9MV8mmVDwzKJo_KnzrAWWPSQ5YlpwX7A&s"
+        />
+        <a
+          >UNIVERSITY OF NEW HAVEN, New Haven, CT Aug 2023 - May 2025
+          <a>Masters in Computer Science - GPA: 3.8/4.0</a>
           <a
-            >Java: Proficient in Java programming, focusing on object-oriented
-            design, data structures, and algorithms. Experienced with Java
-            frameworks such as Spring and Hibernate for building scalable
-            applications. Strong understanding of software development
-            principles and best practices.
-          </a>
-        </section>
-        <section class="blogs">
-            <h3>Blogs</h3>
-            <div class="blog">
-              <img
+            >Relevant Courses: Artificial Intelligence, Algorithm Design and
+            Analysis, Web-Database Appl Development, Cloud Computing & Big
+            Data.</a
+          >
+        </a>
+      </section>
+      <section class="cer">
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPVNpIXHwcAkO22ZUxsOp8dMLky5jHgTij9A&s"
+        />
+        <a
+          >Java Programming: Proficient in object-oriented programming, data
+          structures, and application development using Java frameworks. -
+          Python Programming: Skilled in data analysis, web development, and
+          automation with libraries like Pandas and Flask.
+        </a>
+      </section>
+      <h3 id="skillhead">Skills</h3>
+      <section class="skill" id="skill1">
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfHAL9lwC3v52oaow4glc74V_u068ns3h2tg&s"
+        />
+        <a
+          >SQL (Structured Query Language): Proficient in writing complex
+          queries for data retrieval, manipulation, and analysis. Experienced in
+          database design, normalization, and optimization. Familiar with
+          relational database management systems such as MySQL and PostgreSQL.
+        </a>
+      </section>
+      <section class="skill" id="skill2">
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjFxLTtL-3bwkqRcHTbWfXYGG8yPHIDn_9vg&s"
+        />
+        <a
+          >Python: Proficient in Python programming for data analysis,
+          automation, and web development. Experienced with frameworks and
+          libraries such as Pandas, NumPy, Flask, and Django. Strong
+          understanding of object-oriented programming and data visualization
+          techniques.
+        </a>
+      </section>
+      <section class="skill" id="skill3">
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXEgMyIuR04vWWQSj8ugCSPzEVEvzn6D89zQ&s"
+        />
+        <a
+          >Java: Proficient in Java programming, focusing on object-oriented
+          design, data structures, and algorithms. Experienced with Java
+          frameworks such as Spring and Hibernate for building scalable
+          applications. Strong understanding of software development principles
+          and best practices.
+        </a>
+      </section>
+      <section class="blogs">
+        <h3>Blogs</h3>
+        <div class="blog">
+          <img
             src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPDfW9EOYFyamNyurzKbNb3f69Uym7Cdmang&s"
-          /><br/>
-          <a>
-           "5 Common Mistakes in Coding and How to Avoid Them"
-          </a></div>        
-          <div class="blog">
-            <img
-          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTH1OOWhV-kXmChYKRPmG46hilvSswp574prg&s"
-          /><br/>
-          <a>
-           "Version Control Best Practices: A Guide to Git and GitHub"
-          </a></div>        
-          <div class="blog">
-            <img
-          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4Vp4lNVB8p9mHOdNk4iFYlHcjiJtbx1QzOg&s"
-          /><br/>
-          <a>
-            "Building Effective Unit Tests: A Key to Bug-Free Code"
-          </a></div>            
-        </section>
-        <footer>
-            <span
+          /><br />
+          <a> "5 Common Mistakes in Coding and How to Avoid Them" </a>
+        </div>
+        <div class="blog">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTH1OOWhV-kXmChYKRPmG46hilvSswp574prg&s"
+          /><br />
+          <a> "Version Control Best Practices: A Guide to Git and GitHub" </a>
+        </div>
+        <div class="blog">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4Vp4lNVB8p9mHOdNk4iFYlHcjiJtbx1QzOg&s"
+          /><br />
+          <a> "Building Effective Unit Tests: A Key to Bug-Free Code" </a>
+        </div>
+      </section>
+      <footer>
+        <span
           ><img
             src="https://cdn-icons-png.freepik.com/256/398/398881.png?ga=GA1.1.1494018110.1727279174&semt=ais_hybrid"
         /></span>
@@ -523,7 +562,17 @@ footer{
           ><img
             src="https://cdn-icons-png.freepik.com/256/14083/14083769.png?ga=GA1.1.1494018110.1727279174&semt=ais_hybrid"
         /></span>
-        </footer>
+      </footer>
     </div>
-</body>
+    <script>
+      function myFunction() {
+        var nav = document.getElementById("ResponsiveMenu");
+        if (nav.className === "") {
+          nav.className = "responsive";
+        } else {
+          nav.className = "";
+        }
+      }
+    </script>
+  </body>
 </html>
